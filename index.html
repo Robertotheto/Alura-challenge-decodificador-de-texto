@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <main>
+        <section class="conteudo-one">
+            <img src="./assets/alura-logo.png" alt="Logo da Alura">
+            <div class="conteudo-descricao">
+                <textarea id="enter-input" placeholder="Digite seu texto"></textarea>
+                <div class="conteudo-descricao-informacao">
+                    <div class="conteudo-descricao-details">
+                        <img src="./assets/bi_exclamation-circle-fill.svg" alt="circulo alternativo">
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="conteudo-descricao-links">
+                        <button onclick="Criptografar()">Criptografar</button>
+                        <button onclick="Descriptografar()">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="conteudo-two">
+            <img id="search-logo" src="./assets/search.svg" alt="imagem para procurar algo">
+            <div id="details-description" class="conteudo-two-descricao">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <textarea id="output" hidden></textarea>
+            <button id="copy" hidden onclick="Copiar()">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <div class="rodape_social">
+            <a href="https://www.linkedin.com/in/robertodossantosfilho/" target="_blank">
+                <ion-icon size="large" name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://github.com/Robertotheto" target="_blank">
+                <ion-icon size="large" name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/robertodossantosfilho1001/" target="_blank">
+                <ion-icon size="large" name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+        <p>© 2024 Desenvolvido por Roberto Filho Dev</p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

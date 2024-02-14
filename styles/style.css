@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #FFFFFF;
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+}
+body{
+    background-color: var(--light-blue-100);
+    font-family: 'Inter', sans-serif;
+}
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    gap: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.conteudo-one{
+    display: flex;
+    gap: 5rem;
+    margin-left: 2.5rem;
+}
+.conteudo-one img{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+.conteudo-descricao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+.conteudo-descricao textarea{
+    min-height: 18rem;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: var(--dark-blue-300);
+    max-width: 42.5rem;
+    text-align: left;
+    resize: none;
+    text-transform: lowercase;
+}
+.conteudo-descricao textarea::placeholder{
+    font-size: 2rem;
+    color: var(--dark-blue-300);
+}
+.conteudo-descricao textarea:focus{
+    border: none;
+    outline: none;
+}
+.conteudo-descricao textarea::-webkit-scrollbar{
+    width: 0;
+}
+.conteudo-descricao-informacao{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.conteudo-descricao-details{
+    display: flex;
+}
+.conteudo-descricao-details img{
+    width: 1rem;
+    height: 1rem;
+    object-fit: cover;
+}
+.conteudo-descricao-details p{
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--gray-400);
+}
+.conteudo-descricao-links{
+    display: flex;
+    gap: 1.5rem;
+   
+}
+.conteudo-descricao-links button{
+    width: 20.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.conteudo-descricao-links :first-child{
+    background-color: var(--dark-blue-300);
+    color: var(--white);
+}
+.conteudo-descricao-links :last-child{
+    background-color: var(--light-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+}
+.conteudo-descricao-links :first-child:hover{
+    background-color: var(--dark-blue-400);
+}
+.conteudo-descricao-links :last-child:hover{
+    background-color: var(--light-blue-400);
+}
+.conteudo-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    margin-right: 2.5rem;
+}
+.conteudo-two img{
+    width: 18.75rem;
+    height: 18.75rem;
+    object-fit: cover;
+}
+.conteudo-two-descricao{
+    text-align: center;
+}
+.conteudo-two-descricao h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-500);
+}
+.conteudo-two-descricao p{
+    font-size: 1rem;
+    color: var(--gray-400);
+    margin-top: 1rem;
+}
+.conteudo-two textarea{
+    height: 40rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: var(--gray-400);
+    max-width: 15rem;
+    text-align: left;
+    resize: none;
+    border: none;
+    outline: none;
+}
+.conteudo-two button{
+    width: 20.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background-color: var(--white);
+}
+footer .rodape_social{
+    display: flex;
+}
+footer .rodape_social a{
+    text-decoration: none;
+    color: var(--dark-blue-300);
+    padding: 0.25rem;
+}
+footer .rodape_social a:hover{
+    background: var(--light-blue-300);
+    border-radius: 50%;
+}
